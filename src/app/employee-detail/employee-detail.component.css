@@ -1,0 +1,35 @@
+.title{
+    text-align: center;
+}
+.container{
+  display: table;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  width: auto;
+  margin-left: 10px;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 20px;
+  height:720px;
+}
+
+.image{
+  place-items:left;
+  position: absolute;
+  width :35%;
+  left: auto;
+}
+.details{
+  position: absolute;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  left: 750px;
+  place-items:right;
+  color: grey;
+  font-size: 22px;
+}
+
+
+

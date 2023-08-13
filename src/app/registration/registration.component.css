@@ -1,0 +1,16 @@
+p{
+    display: grid;
+    place-items: center;
+   
+}
+.container{
+    display: grid;
+    place-items: center;
+   
+}
+.form-control{
+    height: 30px;
+}
+#exampleInputName1.ng-invalid.ng-touched{
+border:1px solid red;
+}

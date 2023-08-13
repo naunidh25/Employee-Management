@@ -1,0 +1,35 @@
+
+h5{
+    color:#fff;
+  }
+  .nav-link{
+    color:cyan;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
+  
+  
+  .content {
+    flex: 1; 
+    background-color: #fff;
+  }
+  
+  main {
+    
+    display: flex;
+    flex-direction: column;
+  
+  
+  }
+  
+  .app-footer{
+    height: 40px;
+    color: #222222;
+    font-size: 12px;
+    margin-right: 4px;
+    margin-left: 5px;
+  }

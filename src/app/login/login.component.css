@@ -1,0 +1,8 @@
+.int{
+    margin-bottom: 10px;
+ }
+ .container{
+    display: grid;
+    place-items: center;
+   
+ }

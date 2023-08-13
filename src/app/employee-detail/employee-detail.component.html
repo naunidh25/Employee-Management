@@ -1,0 +1,23 @@
+<h2 class="title">Employee Detail</h2>
+
+        <div class="container">
+                <div class="card">
+                <img class="image" id="employee-img{{employee.id}}" src="{{employee.image}}">
+                <div class="details">        
+                <p>Full Name: {{employee.fullName}}</p>
+                <p>First Name: {{employee.firstName}}</p>
+                <p>Last Name: {{employee.lastName}}</p>
+                <p>Phone Number: {{employee.phone}}</p>
+                <p>Email: {{employee.email}}</p>
+                <p>Gender: {{employee.gender}}</p>
+                <p>Age: {{employee.age}}</p>
+                <p>Job Title: {{employee.jobTitle}}</p>
+                <p>Grade: {{employee.grade}}</p>
+                <p>Department: {{employee.department}}</p>
+                <p>Experience: {{employee.yearsOfExperience}}</p>
+                <p>Salary: {{employee.salary}}</p>
+                
+                </div>
+                </div>
+                <button class="goBack" (click)="goBack()">Back</button> 
+        </div>

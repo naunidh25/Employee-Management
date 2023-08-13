@@ -1,0 +1,10 @@
+<h2 class="title">Employee List</h2>
+<div class="container">
+    <div class="card" *ngFor="let employee of employeeList">
+    <img class="image" id="employee-img{{employee.id}}" src="{{employee.image}}">
+    <h2 class="name">{{employee.fullName}}</h2>
+    <p class="id">ID: {{employee.id}}</p>
+    <p class="grade">Grade: {{employee.grade}}</p>
+    <button class="show-details" (click)="seeDetails(employee.id)">Details</button>
+    </div>
+</div>

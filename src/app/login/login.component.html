@@ -1,0 +1,26 @@
+<form #login=ngForm>
+    <div class="container">
+    <div class="mb-3">
+    <label for="exampleInputName1" class="form-label">User Name</label>
+    <input class="form-control" id="exampleInputName1" type="text" name="uname"  required minlength ="5" placeholder="User Name" #uname= "ngModel"  [(ngModel)] ="username"><br>
+    </div>
+    <div *ngIf="uname.invalid && uname.touched" >
+        <div *ngIf =" uname.errors?.required" class="text-danger">User Name is required</div>
+        <div *ngIf =" uname.errors?.minlength" class="text-danger">User Name has to be min 5 character</div>
+    
+    </div>
+    <div class="mb-3">
+    <label for="exampleInputName1" class="form-label">Password</label>
+    <input  class="form-control" id="exampleInputName1" type="password" name="pwd" placeholder="Password" #pwd="ngModel" required minlength="5" [(ngModel)] ="password"><br>
+    </div>
+    <div *ngIf="pwd.invalid && pwd.touched" >
+        <div *ngIf =" pwd.errors?.required" class="text-danger">Password is required</div>
+        <div *ngIf =" pwd.errors?.minlength" class="text-danger">Password has to be min 5 character</div>
+    
+    </div>
+    <div class="mb-3">
+    <button type="submit" class="btn btn-primary" [disabled]="login.invalid" (click)="authenticate()">Login</button><br>
+</div>
+</div>
+    </form>
+
